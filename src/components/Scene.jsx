@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef } from "react";
 import Sphere from "./Sphere";
 import Box from "./Box";
 import { OrbitControls } from "@react-three/drei";
-import { useFrame, useThree } from "@react-three/fiber";
+import {  useThree } from "@react-three/fiber";
 import Light from "./Light";
 import { GlobalContext } from "../context/context";
 import gsap from "gsap";
@@ -38,6 +38,7 @@ export default function Scene() {
       z: data.mesh.rotation.z,
       ...defaults,
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   const boxItems = [

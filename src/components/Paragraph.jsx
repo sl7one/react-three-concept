@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 export default function Paragraph({ text }) {
   useEffect(() => {

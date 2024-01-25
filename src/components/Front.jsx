@@ -1,5 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
-import { GlobalContext } from "../context/context";
+import React, {  useState } from "react";
 import Text from "./Text";
 import Actions from "./Actions";
 
